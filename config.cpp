@@ -87,6 +87,10 @@ class cfgVehicles
 		{
 			"great_stag\data\great_stag.paa"
 		};
+		hiddenSelectionsMaterials[]=
+        {
+            "great_stag\data\great_stag.rvmat"
+        };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -94,7 +98,7 @@ class cfgVehicles
 				class Health
 				{
 					hitpoints=1000;
-					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
+					healthLabels[]={1,0.2,0.1,0.0000001,0};
 				};
 				class Blood
 				{
@@ -126,7 +130,7 @@ class cfgVehicles
 				item="stag_pelt";
 				count=2;
 				quantityCoef=1;
-				transferToolDamageCoef=1;
+				transferToolDamageCoef=0.1;
 			};
 			class ObtainedGuts
 			{
@@ -145,7 +149,7 @@ class cfgVehicles
 				item="Bone";
 				count=4;
 				quantityMinMaxCoef[]={0.69999999,1};
-				transferToolDamageCoef=1;
+				transferToolDamageCoef=0.5;
 			};
 		};
 	};
